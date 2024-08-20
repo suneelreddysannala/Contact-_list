@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#heading {
+    text-align: center;
+    margin: 20px;
+    color: gray;
+}
+
+#list {
+    text-align: center;
+    margin: 20px auto; /* Centers the entire list container */
+    background-color: aquamarine;
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 10px; /* Optional: Rounds the corners of the list container */
+    max-width: 400px; /* Optional: Limits the width of the list container */
+}
+
+#list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#list li {
+    display: flex;
+    justify-content: space-between; /* Space between name and number */
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0; /* Background color for each list item */
+    border-radius: 5px; /* Optional: Rounds the corners of list items */
+}
+
+.contact-name {
+    margin-right: 20px;
+}
+
+.contact-number {
+    font-weight: bold;
+}
+
+form.foram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px; /* Optional: Limits the width of the form */
+    background-color: #f7f7f7;
+    border-radius: 10px; /* Optional: Rounds the corners of the form */
+}
+
+form.foram input, form.foram button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Optional: Rounds the corners of inputs and button */
+}
+
+form.foram button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    cursor: pointer;
+}
+
+form.foram button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

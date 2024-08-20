@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1 id="heading">
+        <i class="fas fa-address-book"></i>
+        
+        Contacts List</h1>
+    <div id="list">
+        <ul >
+            <% for (let i of contact_list) { %>
+                <li>
+                    <p><%= i.name %></p>
+                    <p><%= i.number %></p>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <form action="create-contact" method="post" class="foram">
+        <input type="text" name="name" placeholder="Enter the name" required>
+        <input type="number" name="number" placeholder="Enter the number" required>
+        <button type="submit">Add Contact</button>
+    </form>
+    <script type="text/javascript" src="/js/home.js"></script>
+</body>
+</html>
